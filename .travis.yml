@@ -3,9 +3,9 @@ language: generic
 services:
   - docker
 
-  before_install:
-    - docker build -t sachinpandey7/docker-test -f Dockerfile.dev .
+before_install:
+  - docker build -t sachinpandey7/docker-test -f Dockerfile.dev .
   
-  script:
-    - docker run -e CI=true sachinpandey7/docker-test npm run test
+script:
+  - docker run -e CI=true sachinpandey7/docker-test npm run test
   
