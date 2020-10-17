@@ -12,10 +12,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: ap-south-1
-  app: 'docker-test'
-  env: DockerTest-env
+  app: docker-travis-ci
+  env: DockerTravisCi-env
   bucket_name: elasticbeanstalk-ap-south-1-238242600829
-  bucket_path: 'docker-test'
+  bucket_path: docker-travis-ci
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
